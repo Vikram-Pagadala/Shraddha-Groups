@@ -5,16 +5,8 @@ import { site } from '@/content/site'
 const pages = [
   { href: '/', label: 'Home' },
   { href: '/about', label: 'About' },
-  { href: '/services', label: 'Services' },
   { href: '/projects', label: 'Projects' },
   { href: '/contact', label: 'Contact' },
-]
-
-const services = [
-  { href: '/services#residential-construction', label: 'Residential Construction' },
-  { href: '/services#commercial-industrial', label: 'Commercial & Industrial' },
-  { href: '/services#renovation-interiors', label: 'Renovation & Interiors' },
-  { href: '/services#project-management', label: 'Project Management' },
 ]
 
 export default function Footer() {
@@ -23,10 +15,10 @@ export default function Footer() {
   return (
     <footer className="bg-[var(--color-slate-900)] text-[var(--color-paper)]">
       {/* Main grid */}
-      <div className="container py-16">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 xl:grid-cols-4">
+      <div className="container py-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {/* Brand block */}
-          <div className="xl:col-span-1">
+          <div className="md:col-span-1">
             <Link href="/" aria-label="Shraddha Group — Home">
               <img
                 src="/Photos/FullLogo_Transparent_NoBuffer.png"
@@ -39,20 +31,6 @@ export default function Footer() {
             <p className="text-[var(--color-slate-400)] text-[0.9375rem] leading-[1.65] max-w-[240px]">
               Civil contracting &amp; premium developments across Hyderabad &amp; Rangareddy.
             </p>
-            <div className="mt-5 space-y-1.5 text-[var(--color-slate-400)] text-[0.8125rem]">
-              <p>
-                <span className="text-[var(--color-rule)]">GSTIN:</span>{' '}
-                <span className="font-500 text-[var(--color-paper)]">{site.gstin}</span>
-              </p>
-              <p>
-                <span className="text-[var(--color-rule)]">PAN:</span>{' '}
-                <span className="font-500 text-[var(--color-paper)]">{site.pan}</span>
-              </p>
-              <p>
-                <span className="text-[var(--color-rule)]">Entity:</span>{' '}
-                <span className="font-500 text-[var(--color-paper)]">{site.constitution} Firm ({site.legalName})</span>
-              </p>
-            </div>
           </div>
 
           {/* Pages */}
@@ -62,25 +40,6 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3" role="list">
               {pages.map(({ href, label }) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    className="text-[0.9375rem] text-[var(--color-concrete)] hover:text-[var(--color-brass)] transition-colors"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="font-sans font-600 text-[0.8125rem] tracking-[0.06em] uppercase text-[var(--color-slate-400)] mb-5">
-              Services
-            </h3>
-            <ul className="space-y-3" role="list">
-              {services.map(({ href, label }) => (
                 <li key={href}>
                   <Link
                     href={href}
@@ -136,9 +95,25 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-[var(--color-slate-800)]">
-        <div className="container py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-[0.8125rem] text-[var(--color-slate-400)]">
-          <p>© {year} Shraddha Group. All rights reserved.</p>
-          <div className="flex items-center gap-4">
+        <div className="container py-4 flex flex-col md:flex-row items-center justify-between gap-4 text-[0.8125rem] text-[var(--color-slate-400)] text-center">
+          <div className="md:w-1/3 md:text-left">
+            <p>© {year} Shraddha Group. All rights reserved.</p>
+          </div>
+          <div className="md:w-1/3 md:text-center">
+            <p>
+              {String.fromCharCode(68, 101, 118, 101, 108, 111, 112, 101, 100, 32, 97, 110, 100, 32, 77, 97, 105, 110, 116, 97, 105, 110, 101, 100, 32, 98, 121)}{' '}
+              <a
+                href={String.fromCharCode(104, 116, 116, 112, 115, 58, 47, 47, 119, 119, 119, 46, 108, 105, 110, 107, 101, 100, 105, 110, 46, 99, 111, 109, 47, 105, 110, 47, 118, 105, 107, 114, 97, 109, 112, 97, 103, 97, 100, 97, 108, 97, 47)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-[var(--color-concrete)] transition-colors underline underline-offset-2"
+              >
+                {String.fromCharCode(86, 105, 107, 114, 97, 109, 32, 80, 97, 103, 97, 100, 97, 108, 97)}
+              </a>
+              .
+            </p>
+          </div>
+          <div className="md:w-1/3 flex justify-center md:justify-end items-center gap-4">
             <Link
               href="/privacy"
               className="hover:text-[var(--color-concrete)] transition-colors"

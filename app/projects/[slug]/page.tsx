@@ -76,7 +76,7 @@ export default async function ProjectDetailPage({ params }: Props) {
     ...(project.floors ? [{ label: 'Structure & Elevation', value: project.floors }] : []),
     ...(project.approvals?.hmda ? [{ label: 'HMDA Approval No.', value: project.approvals.hmda }] : []),
     ...(project.approvals?.rera ? [{ label: 'RERA Registration No.', value: project.approvals.rera }] : []),
-    { label: 'Commencement', value: formatDate(project.startDate) },
+    ...(project.startDate ? [{ label: 'Commencement', value: formatDate(project.startDate) }] : []),
     ...(project.endDate ? [{ label: 'Completion', value: formatDate(project.endDate) }] : []),
     ...(project.expectedCompletion
       ? [{ label: 'Expected Handover', value: formatDate(project.expectedCompletion) }]
@@ -161,6 +161,21 @@ export default async function ProjectDetailPage({ params }: Props) {
         <div className="grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-12 xl:gap-16 items-start">
           {/* Left Column */}
           <div>
+            {/* Promotional Video */}
+            {project.video && (
+              <div className="mb-12 rounded-xl overflow-hidden shadow-xl border border-[var(--color-rule)] bg-[var(--color-slate-900)]">
+                <video
+                  src={project.video}
+                  autoPlay
+                  loop
+                  muted
+                  controls
+                  playsInline
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            )}
+
             {/* Project Overview / Description */}
             <div className="mb-12">
               <h2 className="font-serif font-700 text-[var(--color-slate-900)] mb-5 text-[1.5rem]">
@@ -371,23 +386,25 @@ export default async function ProjectDetailPage({ params }: Props) {
             )}
 
             {/* Scope of work */}
-            <div className="mb-14">
-              <h2 className="font-serif font-700 text-[var(--color-slate-900)] mb-5 text-[1.4rem]">
-                Engineering & Project Features
-              </h2>
-              <ul className="space-y-3" role="list">
-                {project.scope.map((item) => (
-                  <li key={item} className="flex items-start gap-3.5 text-[0.96875rem] text-[var(--color-slate-700)]">
-                    <CheckSquare
-                      size={18}
-                      className="text-[var(--color-brass)] shrink-0 mt-0.5"
-                      aria-hidden="true"
-                    />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {project.scope && project.scope.length > 0 && (
+              <div className="mb-14">
+                <h2 className="font-serif font-700 text-[var(--color-slate-900)] mb-5 text-[1.4rem]">
+                  Engineering & Project Features
+                </h2>
+                <ul className="space-y-3" role="list">
+                  {project.scope.map((item) => (
+                    <li key={item} className="flex items-start gap-3.5 text-[0.96875rem] text-[var(--color-slate-700)]">
+                      <CheckSquare
+                        size={18}
+                        className="text-[var(--color-brass)] shrink-0 mt-0.5"
+                        aria-hidden="true"
+                      />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
             {/* Gallery */}
             {project.gallery.length > 0 && (

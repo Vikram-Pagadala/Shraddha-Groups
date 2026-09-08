@@ -30,21 +30,29 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {/* Status pill overlay */}
         <div className="absolute top-3.5 left-3.5 flex items-center gap-2">
           <StatusPill status={project.status} />
-          {project.approvals && (
-            <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[0.7rem] font-600 bg-emerald-950/85 text-emerald-300 border border-emerald-500/30 backdrop-blur-md">
-              <ShieldCheck size={12} />
-              HMDA & RERA Approved
-            </span>
-          )}
         </div>
+
+        {/* Approvals Shield overlay (Right Top) */}
+        {project.approvals && (
+          <div className="absolute top-3.5 right-3.5">
+            <div className="flex items-center justify-center rounded-full bg-emerald-950/90 text-emerald-300 border border-emerald-500/30 backdrop-blur-md px-2 py-1.5 cursor-default overflow-hidden transition-all duration-300 group-hover:px-3 shadow-lg">
+              <ShieldCheck size={14} className="shrink-0" />
+              <span className="max-w-0 opacity-0 whitespace-nowrap overflow-hidden transition-all duration-300 group-hover:max-w-[200px] group-hover:opacity-100 group-hover:ml-1.5 text-[0.7rem] font-600 tracking-wide">
+                HMDA & RERA Approved
+              </span>
+            </div>
+          </div>
+        )}
 
         {/* Pricing badge on image */}
         {project.pricing?.offerPrice && (
           <div className="absolute bottom-3 right-3">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-[0.75rem] font-700 bg-[var(--color-brass)] text-[var(--color-slate-900)] shadow-lg font-mono tracking-tight">
-              <Tag size={12} />
-              Offer: {project.pricing.offerPrice}
-            </span>
+            <div className="flex items-center justify-center rounded-md bg-[var(--color-brass)] text-[var(--color-slate-900)] shadow-lg px-2 py-1.5 cursor-default overflow-hidden transition-all duration-300 group-hover:px-3">
+              <Tag size={14} className="shrink-0" />
+              <span className="max-w-0 opacity-0 whitespace-nowrap overflow-hidden transition-all duration-300 group-hover:max-w-[250px] group-hover:opacity-100 group-hover:ml-1.5 text-[0.75rem] font-700 font-mono tracking-tight">
+                Offer: {project.pricing.offerPrice}
+              </span>
+            </div>
           </div>
         )}
       </div>

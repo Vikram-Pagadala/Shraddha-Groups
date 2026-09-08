@@ -4,7 +4,7 @@ import Button from '@/components/ui/Button'
 export default function Hero() {
   return (
     <section
-      className="relative min-h-[100svh] flex items-end pb-16 md:pb-24 overflow-hidden"
+      className="relative min-h-[100svh] flex items-center pt-32 pb-16 md:pb-24 overflow-hidden"
       aria-label="Hero"
     >
       {/* Background photo */}
@@ -28,17 +28,17 @@ export default function Hero() {
       {/* Paper slab content card */}
       <div className="container relative z-10">
         <div
-          className="max-w-[600px] bg-[var(--color-paper)] p-8 md:p-10 rounded-[4px]"
+          className="max-w-[600px] bg-[var(--color-paper)] p-6 sm:p-8 md:p-10 rounded-[4px]"
           style={{ boxShadow: '0 8px 40px rgba(27,39,51,0.25)' }}
         >
           <h1 className="hero-animate font-serif text-[var(--color-slate-900)] mb-4"
-            style={{ fontSize: 'clamp(1.75rem, 4vw, 3.25rem)', lineHeight: '1.1', letterSpacing: '-0.01em' }}
+            style={{ fontSize: 'clamp(1.5rem, 3.5vw, 2.25rem)', lineHeight: '1.2', letterSpacing: '-0.01em' }}
           >
-            Civil contracting across Hyderabad &amp; Rangareddy.
+            Our commitment — to build better communities, deliver with integrity, and create properties you can be proud to own.
           </h1>
 
           <p className="hero-animate hero-animate-delay-1 text-[var(--color-slate-600)] text-[1.0625rem] leading-[1.65] mb-8 max-w-[52ch]">
-            Residential, commercial and industrial construction — from foundation to handover, on a schedule we commit to in writing.
+            Apartments, villas, & open plots
           </p>
 
           <div className="hero-animate hero-animate-delay-2 flex flex-wrap gap-3">

@@ -6,9 +6,9 @@ import { site } from '@/content/site'
 import CertificatesViewer from '@/components/about/CertificatesViewer'
 
 export const metadata: Metadata = {
-  title: 'About Us — Civil Contracting & Development in Hyderabad',
+  title: 'About Us — Real Estate Marketing in Hyderabad',
   description:
-    'About Shraddha Group — registered civil contractors and developers based in Matrusri Nagar, Miyapur, Hyderabad. Company credentials, GST/PAN registration, quality policy, and execution standards.',
+    'About Shraddha Group — a professionally driven real-estate marketing company based in Hyderabad, specializing in open plots, villas, and apartments.',
   alternates: {
     canonical: '/about',
   },
@@ -54,19 +54,25 @@ export default function AboutPage() {
             <h2 className="font-serif text-[var(--color-slate-900)] mb-6"
               style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', lineHeight: '1.15', letterSpacing: '-0.01em' }}
             >
-              Registered civil contractors &amp; developers, built on transparent execution.
+              Connecting people with the right property.
             </h2>
             <p>
-              Shraddha Group is a premier civil contracting and development firm based in Matrusri Nagar, Miyapur, Hyderabad. Operating under the government-registered entity Shraddha Enterprises, our founding principle is simple: accept only work that can be done well and on time, and report progress honestly — good news and bad.
+              <strong>Shraddha Group</strong> is a professionally driven real-estate marketing company based in Hyderabad, specializing in the marketing and promotion of apartments, villas, and open-plot developments across Hyderabad.
             </p>
             <p>
-              Today we carry out landmark high-rise residential communities (including Vian Vayu and Vian Mrida), commercial complexes, industrial warehousing, and renovation projects across Hyderabad and Rangareddy district. Our site engineers and supervisors are employed directly. We use established material suppliers whose test certificates we check, and we run structured weekly progress reporting on every project.
+              Our approach is built on a simple principle: understand the project, communicate its value clearly, and connect it with the right customers. We work closely with developers and project partners to bring quality residential opportunities to the market through strategic marketing, customer engagement, and dedicated sales support.
             </p>
             <p>
-              We have never missed a structural milestone date without advance notice to the client. Where delays have occurred — soil problems, rain, delayed client approvals — we have communicated them early, quantified the impact, and proposed a recovery programme.
+              From premium apartment communities and thoughtfully planned villas to group housing projects and open-plot developments, we represent a diverse portfolio of properties suited to different lifestyles, budgets, and investment objectives.
             </p>
             <p>
-              We do not attempt to be the cheapest contractor in the market. We attempt to be the most reliable one within a reasonable cost bracket, and to produce work that a structural engineer would sign off on without hesitation.
+              Our team focuses on providing customers with clear project information, responsive assistance, site-visit coordination, and end-to-end support throughout the property selection and booking journey. We believe that informed customers make confident decisions, and transparency remains at the heart of every interaction.
+            </p>
+            <p>
+              We do not simply market properties. We build visibility for projects, create meaningful customer connections, and help turn property opportunities into successful transactions.
+            </p>
+            <p>
+              At Shraddha Group, our vision is to become a trusted name in real-estate marketing by bringing together credible projects, strategic marketing, and the right buyers.
             </p>
           </div>
 
@@ -92,50 +98,7 @@ export default function AboutPage() {
         </div>
       </Section>
 
-      {/* What we stand for */}
-      <Section label="Standards" id="standards" bg="concrete">
-        <h2 className="font-serif text-[var(--color-slate-900)] mb-10"
-          style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', lineHeight: '1.15', letterSpacing: '-0.01em' }}
-        >
-          What we will not compromise on
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6">
-          {[
-            {
-              icon: Award,
-              title: 'Materials',
-              body: 'Fe500D TMT bars, IS-grade cement, IS-grade aggregate. No substitutions without written client consent and a test certificate.',
-            },
-            {
-              icon: Shield,
-              title: 'Structural integrity',
-              body: 'Structural drawings reviewed or prepared by a qualified engineer. No verbal approvals on structural changes.',
-            },
-            {
-              icon: Users,
-              title: 'Direct supervision',
-              body: 'Our own supervisors — not labour contractors — on site every working day. You have one point of contact.',
-            },
-            {
-              icon: Wrench,
-              title: 'Defect liability',
-              body: '12 months on all structural and waterproofing works. Accessible team for the entire period.',
-            },
-          ].map(({ icon: Icon, title, body }) => (
-            <div key={title} className="card p-6">
-              <div className="w-10 h-10 flex items-center justify-center rounded-[4px] bg-[var(--color-concrete)] mb-5">
-                <Icon size={20} className="text-[var(--color-brass)]" aria-hidden="true" />
-              </div>
-              <h3 className="font-serif font-700 text-[var(--color-slate-900)] mb-2"
-                style={{ fontSize: '1.0625rem' }}
-              >
-                {title}
-              </h3>
-              <p className="text-[var(--color-slate-600)] text-[0.9375rem] leading-[1.6]">{body}</p>
-            </div>
-          ))}
-        </div>
-      </Section>
+
 
       {/* Statutory Certifications */}
       <Section label="Verification" id="certificates" bg="paper">
@@ -179,15 +142,17 @@ export default function AboutPage() {
 
       {/* CTA */}
       <Section label="" id="about-cta" bg="slate" noPaddingTop noPaddingBottom>
-        <div className="py-20 text-center">
-          <p className="font-serif text-[var(--color-paper)] mb-6"
-            style={{ fontSize: 'clamp(1.25rem, 3vw, 1.75rem)', lineHeight: '1.2' }}
-          >
-            Ready to discuss a project?
-          </p>
-          <Button href="/contact" variant="primary" size="lg" id="about-contact-cta">
-            Send us your requirement
-          </Button>
+        <div className="py-24 text-center">
+          <div className="inline-flex flex-col items-center justify-center p-10 md:p-14 rounded-2xl bg-gradient-to-br from-slate-800/90 to-slate-900/90 border border-[var(--color-brass)]/40 shadow-2xl backdrop-blur-sm mx-4">
+            <h2 className="font-serif text-[var(--color-paper)] mb-8 tracking-tight"
+              style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', lineHeight: '1.2' }}
+            >
+              Ready to discuss a project?
+            </h2>
+            <Button href="/contact" variant="primary" size="lg" id="about-contact-cta" className="shadow-lg font-600 transition-transform hover:scale-105">
+              Send us your requirement
+            </Button>
+          </div>
         </div>
       </Section>
     </>

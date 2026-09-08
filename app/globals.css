@@ -58,6 +58,7 @@
     color: var(--color-slate-900);
     background-color: var(--color-paper);
     scroll-behavior: smooth;
+    scroll-padding-top: 72px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

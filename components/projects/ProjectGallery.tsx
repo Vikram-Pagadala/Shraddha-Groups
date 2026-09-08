@@ -25,19 +25,20 @@ export default function ProjectGallery({ images, title }: ProjectGalleryProps) {
           <button
             key={i}
             onClick={() => setLightboxIndex(i)}
-            className="group relative overflow-hidden rounded-[0px] aspect-[4/3] block w-full cursor-zoom-in"
+            className="group relative flex flex-col items-center justify-center overflow-hidden rounded-xl border border-slate-200/80 bg-slate-50/50 w-full cursor-zoom-in p-2 md:p-3"
             aria-label={`View image ${i + 1} of ${images.length}`}
             role="listitem"
           >
             <Image
               src={src}
               alt={`${title} — construction photograph ${i + 1}`}
-              fill
+              width={1000}
+              height={1000}
               sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 50vw"
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+              className="w-full h-auto object-contain rounded-md transition-transform duration-500 group-hover:scale-[1.02] shadow-sm"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-[var(--color-slate-900)]/0 group-hover:bg-[var(--color-slate-900)]/20 transition-colors" />
+            <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/5 transition-colors pointer-events-none rounded-xl" />
           </button>
         ))}
       </div>

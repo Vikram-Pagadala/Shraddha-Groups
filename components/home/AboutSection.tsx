@@ -8,7 +8,7 @@ const credentials = [
   { label: 'PAN', value: site.pan },
   { label: 'Jurisdiction', value: site.jurisdiction },
   { label: 'Principal Office', value: 'Matrusri Nagar, Miyapur' },
-  { label: 'Service area', value: 'Hyderabad & Rangareddy' },
+  { label: 'Service area', value: 'in farm service area :: Hyderabad, Telangana' },
   { label: 'Working hours', value: site.hours },
 ]
 
@@ -25,16 +25,22 @@ export default function AboutSection() {
 
         <div className="space-y-5 text-[var(--color-slate-600)] text-[1rem] leading-[1.65] max-w-[65ch]">
           <p>
-            Shraddha Group is a premier civil contracting and development firm based in Matrusri Nagar, Miyapur, Hyderabad. Founded with a straightforward purpose: deliver civil construction and landmark high-rise developments on the agreed date, at the agreed cost, with materials that pass testing. Our focus is unwavering on structural integrity and transparent execution — from iconic residential communities and commercial complexes to industrial warehousing.
+            Shraddha Group is a professionally driven real-estate marketing company focused on connecting customers with carefully selected open plots, villas, and apartment projects across Hyderabad.
           </p>
           <p>
-            We build residential blocks, office buildings, warehouses, factories, and individual homes. Our site supervisors are employed directly, not subcontracted, which means someone who answers to us is on site every working day. Materials are sourced from established suppliers and tested to IS standards; test certificates are available on request for every major input.
+            We work closely with reputed developers and project partners to bring thoughtfully planned residential opportunities to the market. Our role goes beyond traditional property marketing — we focus on understanding each project, identifying its unique value, and presenting the right opportunities to the right customers.
           </p>
           <p>
-            Progress is reported in writing every week — what was done, what is planned, what is pending. If a decision from the client is needed, we say so by Tuesday so the following week&apos;s programme isn&apos;t held up. Handover includes an itemised defects list, a 12-month liability period, and contact details for a supervisor who remains reachable.
+            With a strong understanding of the local real-estate landscape, our marketing approach combines strategic positioning, digital outreach, customer engagement, and transparent communication. From generating awareness to guiding prospective buyers through their property journey, we strive to make every interaction professional, informed, and trustworthy.
           </p>
           <p>
-            We do not bid for work we cannot execute. Before accepting a project, we assess our current workload, the programme, and the complexity of the site. If we cannot take it on without compromising existing commitments, we will say so.
+            Our portfolio encompasses a diverse range of residential opportunities, from well-planned open-plot communities to premium villas and apartment developments. We aim to make quality real estate more accessible by connecting customers with projects that match their aspirations, requirements, and investment goals.
+          </p>
+          <p>
+            At Shraddha Group, we believe great real estate deserves great representation. We market with purpose, connect with trust, and create value by bringing exceptional projects and the right customers together.
+          </p>
+          <p className="font-600 text-[var(--color-slate-900)] mt-2">
+            Shraddha Group — Connecting People with the Right Property.
           </p>
         </div>
 

@@ -1,8 +1,8 @@
 const stats = [
-  { value: '120+', label: 'Projects completed' },
-  { value: '100%', label: 'Written timeline commitment' },
-  { value: '4.2L sq ft', label: 'Built-up area delivered' },
-  { value: '60+', label: 'Repeat clients' },
+  { value: 'Location', label: 'Prime plots & communities' },
+  { value: 'Quality', label: 'Curated premium projects' },
+  { value: 'Transparency', label: 'Clear documentation' },
+  { value: 'Delivery', label: 'Timely project handovers' },
 ]
 
 export default function Stats() {

@@ -4,15 +4,15 @@ export const site = {
   name: 'Shraddha Group',
   legalName: 'SHRADDHA ENTERPRISES',
   constitution: 'Partnership',
-  tagline: 'Civil contracting & premium developments across Hyderabad & Rangareddy.',
+  tagline: 'Connecting buyers with premium open plots, villas & apartments across Hyderabad.',
   description:
-    'Residential, commercial and iconic high-rise construction — from foundation to handover, on a schedule we commit to in writing.',
+    'Shraddha Group is a professional real-estate marketing company specializing in connecting customers with suitable residential projects based on their requirements.',
 
   // Contact details
-  phone: '+91 98490 00000',
-  phoneRaw: '9849000000', // digits only, no +91, used for WhatsApp link
-  whatsapp: 'https://wa.me/919849000000?text=Hi%2C%20I%20have%20a%20construction%20enquiry',
-  email: 'enquiries@shraddhagroup.in',
+  phone: '+91 91773 93428',
+  phoneRaw: '9177393428', // digits only, no +91, used for WhatsApp link
+  whatsapp: 'https://wa.me/919177393428?text=Hi%2C%20I%20have%20a%20property%20enquiry',
+  email: 'shraddhasai2026@gmail.com',
 
   // Principal place of business (From GST Registration Certificate)
   address: {
@@ -79,55 +79,50 @@ export const site = {
   keywords: [
     'shraddha group',
     'shraddha group hyderabad',
-    'civil contractors in hyderabad',
-    'construction companies in hyderabad',
-    'civil contracting company rangareddy',
-    'turnkey construction contractors hyderabad',
-    'residential building contractors hyderabad',
-    'commercial construction contractors madhapur',
-    'industrial warehouse builders hyderabad',
-    'civil contractor miyapur',
-    'building contractors kukatpally',
-    'construction services gachibowli',
-    'civil engineering contractors telangana',
-    'house construction contractors hyderabad',
-    'rcc structural frame builders',
-    'gst registered civil contractor hyderabad',
-    'shraddha enterprises civil contractors',
+    'real estate marketing hyderabad',
+    'property marketing company hyderabad',
+    'open plots in hyderabad',
+    'villas for sale hyderabad',
+    'premium apartments hyderabad',
+    'real estate agents miyapur',
+    'buy open plots tellapur kollur',
     'vian vayu hyderabad',
     'vian mrida tellapur kollur',
+    'property investment hyderabad',
+    'residential projects rangareddy',
+    'gated communities hyderabad',
   ],
 
   faqs: [
     {
-      question: 'Who is Shraddha Group and where are you located?',
+      question: 'What does Shraddha Group do?',
       answer:
-        'Shraddha Group is a premier civil contracting and development firm operating under the government-registered partnership entity Shraddha Enterprises (GSTIN: 36AEZFS0317R1Z3, PAN: AEZFS0317R). Our principal office is located at 105, Matrusri Homes, Matrusri Nagar, Miyapur, Hyderabad, Rangareddy, Telangana 500049 under the Madhapur - I tax jurisdiction.',
+        'Shraddha Group is a professional real-estate marketing company specializing in promoting carefully selected apartments, villas and open-plot projects across Hyderabad. We connect customers with suitable projects based on their requirements, budget, and investment goals.',
     },
     {
-      question: 'What civil construction and development services do you provide in Hyderabad?',
+      question: 'What types of properties does Shraddha Group offer?',
       answer:
-        'We deliver end-to-end turnkey civil construction including premium high-rise residential communities (such as Vian Vayu and Vian Mrida), independent villas, commercial buildings, industrial warehouses, factory sheds, structural renovation, and project management across Hyderabad and Rangareddy district.',
+        'We market a diverse portfolio of residential properties, including premium apartments, villas, and open plots, across areas of Hyderabad.',
     },
     {
-      question: 'How do you price construction projects?',
+      question: 'How does Shraddha Group help me choose the right property?',
       answer:
-        'We provide transparent per-square-foot turnkey pricing for residential and commercial projects. Every client receives an itemised BOQ (Bill of Quantities) and a signed milestone-based payment schedule before work begins, with no hidden escalations.',
+        'We understand your budget, preferred location, property type, lifestyle requirements, and investment objectives and help you explore suitable options. Our team provides project information and coordinates site visits so you can make a well-informed decision.',
     },
     {
-      question: 'What quality guarantees and defect liabilities do you offer?',
+      question: 'Can I visit the project before making a decision?',
       answer:
-        'All raw materials (cement, TMT steel, aggregates, bricks) are batch-tested to IS standards with test certificates made available to clients. Every completed project includes a standard 12-month defect liability period and structural handover documentation.',
+        'Absolutely. We can arrange site visits to shortlisted projects, allowing you to personally experience the location, connectivity, development, amenities, and surrounding infrastructure before making your decision.',
     },
     {
-      question: 'Which areas in Hyderabad and Rangareddy do you take up projects in?',
+      question: 'Do you assist with the property buying process?',
       answer:
-        'We undertake projects throughout Greater Hyderabad and Rangareddy district, including Miyapur, Tellapur, Kollur, Bowrampet, Madhapur, Gachibowli, Kondapur, Kukatpally, Hitec City, Nallagandla, Chandanagar, Patancheru, Banjara Hills, Jubilee Hills, and Secunderabad.',
+        'Yes. Our team supports you throughout the property selection and booking journey — from project information and site visits to pricing, documentation, booking procedures, and coordination with the respective developer.',
     },
     {
-      question: 'Is Shraddha Group a GST-compliant registered entity?',
+      question: 'Why choose Shraddha Group for your property search?',
       answer:
-        'Yes. Shraddha Group operates under the statutory registration of Shraddha Enterprises, registered under the Goods and Services Tax Act with GSTIN 36AEZFS0317R1Z3 and Income Tax Permanent Account Number (PAN) AEZFS0317R.',
+        'At Shraddha Group, we believe that finding the right property should be simple, transparent, and trustworthy. With our understanding of the Hyderabad real-estate market and our diverse project portfolio, we strive to connect every customer with the right opportunity.',
     },
   ],
 } as const
