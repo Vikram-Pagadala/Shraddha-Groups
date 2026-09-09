@@ -39,6 +39,7 @@ export type Project = {
   cover: string
   gallery: string[]
   video?: string
+  brochure?: string
   floorPlans?: string[]
   featured?: boolean
 }
@@ -99,7 +100,7 @@ export const projects: Project[] = [
       '100% Vaastu-compliant architecture with double-height entrance lobby & 100-ft road frontage',
       'Complete safety infrastructure: CCTV surveillance, 24/7 security, and solar fencing',
     ],
-    description: `VIAN VAYU (#FEELTHEFLOW) is an exclusive premium high-rise residential community crafted for elevated, peaceful family living in Kollur, Hyderabad.\n\nDesigned around the natural flow of air and light, VIAN VAYU features 2 magnificent towers with just 5 spacious 3-BHK residences per floor. Over 80% of the residences are corner flats, guaranteeing supreme privacy, cross ventilation, and generous natural daylight.\n\nResidences range from 1,790 sq. ft. to 2,150 sq. ft., complemented by a grand G+5 clubhouse featuring a rooftop infinity pool, wellness gym, kids play arena, and double-height arrival lobbies. Executed with premium IS-standard concrete, high-tensile TMT steel, and construction with MIVAN technology.`,
+    description: `VIAN VAYU (#FEELTHEFLOW) is an exclusive premium high-rise residential community crafted for elevated, peaceful family living in Kollur, Hyderabad.\n\nDesigned around the natural flow of air and light, VIAN VAYU features 2 magnificent towers with just 5 spacious 3-BHK residences per floor. Over 80% of the residences are corner flats, guaranteeing supreme privacy, cross ventilation, and generous natural daylight.\n\nResidences range from 1,790 sq. ft. to 2,150 sq. ft., complemented by a grand G+5 clubhouse featuring a rooftop infinity pool, wellness gym, kids play arena, and double-height arrival lobbies. Marketing with premium IS-standard concrete, high-tensile TMT steel, and construction with MIVAN technology.`,
     cover: '/images/projects/vian-vayu/cover.jpg',
     gallery: [
       '/images/projects/vian-vayu/cover.jpg',
@@ -163,15 +164,32 @@ export const projects: Project[] = [
     description: `VIAN MRIDA (Mrida Smart) is an iconic G+32 stepped high-rise development spanning 2.62 acres in the prime corridor of Kollur, Hyderabad.\n\nConceived around the architectural philosophy of "Breathing Mass," the building converges biophilic aesthetics and structural engineering to provide maximum cross ventilation, louvers that filter daylight, and terraced gardens at multiple elevations.\n\nFeaturing 356 premium 2 & 3 BHK homes (1,395 to 2,360 sq. ft.), 8-foot wide balconies, 8-foot tall doorways, 8-foot corridors, and 4 dedicated levels of clubhouse amenities including a sky pool, stargazing deck, business co-working lounges, and indoor sports arena.`,
     cover: '/images/projects/vian-mrida/cover.jpg',
     video: '/videos/projects/Mrida.mp4',
-    floorPlans: [
-      '/images/projects/vian-mrida/floor-plan-1.jpg',
-      '/images/projects/vian-mrida/floor-plan-2.jpg',
-    ],
+    brochure: '/mrida-brochure.pdf',
     gallery: [
       '/images/projects/vian-mrida/cover.jpg',
       '/images/projects/vian-mrida/entrance-lobby.jpg',
       '/images/projects/vian-mrida/library-lounge.jpg',
       '/images/projects/vian-mrida/connectivity.jpg',
+      '/images/projects/vian-mrida/page-1.jpg',
+      '/images/projects/vian-mrida/page-2.jpg',
+      '/images/projects/vian-mrida/page-3.jpg',
+      '/images/projects/vian-mrida/page-4.jpg',
+      '/images/projects/vian-mrida/page-5.jpg',
+      '/images/projects/vian-mrida/page-6.jpg',
+      '/images/projects/vian-mrida/page-7.jpg',
+      '/images/projects/vian-mrida/page-8.jpg',
+      '/images/projects/vian-mrida/page-9.jpg',
+      '/images/projects/vian-mrida/page-10.jpg',
+      '/images/projects/vian-mrida/page-11.jpg',
+      '/images/projects/vian-mrida/page-12.jpg',
+      '/images/projects/vian-mrida/page-13.jpg',
+      '/images/projects/vian-mrida/page-14.jpg',
+      '/images/projects/vian-mrida/page-15.jpg',
+      '/images/projects/vian-mrida/page-16.jpg',
+      '/images/projects/vian-mrida/page-17.jpg',
+      '/images/projects/vian-mrida/page-18.jpg',
+      '/images/projects/vian-mrida/page-19.jpg',
+      '/images/projects/vian-mrida/page-20.jpg',
     ],
     featured: true,
   },
@@ -181,7 +199,7 @@ export const projects: Project[] = [
     tagline: '600+ Luxury Villas in Beeramguda',
     status: 'ongoing',
     type: 'Residential',
-    client: 'Shraddha Group',
+    client: 'Mantoor Infra & Shraddha Group',
     location: 'Beeramguda (Wadakpally, Exit No.4)',
     builtUpArea: '2,701 – 3,392 sq ft units',
     floors: 'Triplex Villas (G+2)',
@@ -204,6 +222,9 @@ export const projects: Project[] = [
         { label: 'East Facing', amount: '₹5,00,000' },
         { label: 'Corner Unit', amount: '₹10,00,000' },
         { label: 'North East Corner', amount: '₹15,00,000' },
+      ],
+      otherCharges: [
+        { label: 'Amenities', amount: '₹300/-' },
       ],
     },
     scope: [
@@ -256,6 +277,7 @@ export const projects: Project[] = [
     scope: [],
     description: 'Sai Vasista Layout offers premium residential and commercial plots strategically located at Budhera on the Mumbai Highway. Secure your future with our inaugural offer and save big on premium, high-appreciation land. Contact our sales team for plot selection and booking details.',
     cover: '/images/projects/sai-vasista/cover-v2.jpg',
+    video: '/videos/projects/Open%20Plots.mp4',
     gallery: [
       '/images/projects/sai-vasista/cover-v2.jpg',
     ],

@@ -43,7 +43,7 @@ export default function Header() {
       >
         <div className="container flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" aria-label="Shraddha Group — Home" className="flex items-center gap-3">
+          <Link href="/" aria-label="Shraddha Group — Home" className="flex items-center gap-3 shrink-0">
             <img
               src="/Photos/FullLogo_Transparent_NoBuffer.png"
               alt="Shraddha Group"
@@ -85,7 +85,7 @@ export default function Header() {
             <a
               href={`tel:${site.phone}`}
               id="header-call-btn"
-              className="flex items-center gap-2 px-4 py-2 rounded-[4px] bg-[var(--color-brass)] text-[var(--color-slate-900)] font-600 text-[0.9375rem] hover:bg-[var(--color-brass-dark)] transition-colors"
+              className="flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2 rounded-[4px] bg-[var(--color-brass)] text-[var(--color-slate-900)] font-600 text-[0.9375rem] hover:bg-[var(--color-brass-dark)] transition-colors shrink-0"
               aria-label={`Call us at ${site.phone}`}
             >
               <Phone size={16} aria-hidden="true" />

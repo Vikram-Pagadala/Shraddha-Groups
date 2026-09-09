@@ -29,7 +29,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-[var(--color-slate-400)] text-[0.9375rem] leading-[1.65] max-w-[240px]">
-              Civil contracting &amp; premium developments across Hyderabad &amp; Rangareddy.
+              Our commitment — to build better communities, deliver with integrity, and create properties you can be proud to own.
             </p>
           </div>
 
@@ -79,7 +79,7 @@ export default function Footer() {
                 <Mail size={16} className="text-[var(--color-brass)] shrink-0" aria-hidden="true" />
                 <a
                   href={`mailto:${site.email}`}
-                  className="text-[0.9375rem] text-[var(--color-concrete)] hover:text-[var(--color-brass)] transition-colors"
+                  className="text-[0.9375rem] text-[var(--color-concrete)] hover:text-[var(--color-brass)] transition-colors break-all"
                 >
                   {site.email}
                 </a>

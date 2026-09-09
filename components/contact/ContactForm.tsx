@@ -259,8 +259,7 @@ export default function ContactForm() {
             <option value="">Select a type</option>
             <option value="Residential">Residential</option>
             <option value="Commercial">Commercial</option>
-            <option value="Industrial">Industrial</option>
-            <option value="Renovation">Renovation</option>
+            <option value="Open plots">Open plots</option>
             <option value="Other">Other</option>
           </select>
         </Field>
@@ -290,10 +289,10 @@ export default function ContactForm() {
           className={inputClass()}
         >
           <option value="">Not decided</option>
-          <option value="Under ₹10L">Under ₹10L</option>
-          <option value="₹10–25L">₹10–25L</option>
-          <option value="₹25L–1Cr">₹25L–1Cr</option>
-          <option value="Above ₹1Cr">Above ₹1Cr</option>
+          <option value="₹25L–50L">₹25L–50L</option>
+          <option value="₹50L–1Cr">₹50L–1Cr</option>
+          <option value="₹1Cr–1.50Cr">₹1Cr–1.50Cr</option>
+          <option value="₹2Cr and above">₹2Cr and above</option>
         </select>
       </Field>
 

@@ -161,21 +161,6 @@ export default async function ProjectDetailPage({ params }: Props) {
         <div className="grid grid-cols-1 xl:grid-cols-[2fr_1fr] gap-12 xl:gap-16 items-start">
           {/* Left Column */}
           <div>
-            {/* Promotional Video */}
-            {project.video && (
-              <div className="mb-12 rounded-xl overflow-hidden shadow-xl border border-[var(--color-rule)] bg-[var(--color-slate-900)]">
-                <video
-                  src={project.video}
-                  autoPlay
-                  loop
-                  muted
-                  controls
-                  playsInline
-                  className="w-full h-auto object-cover"
-                />
-              </div>
-            )}
-
             {/* Project Overview / Description */}
             <div className="mb-12">
               <h2 className="font-serif font-700 text-[var(--color-slate-900)] mb-5 text-[1.5rem]">
@@ -419,6 +404,21 @@ export default async function ProjectDetailPage({ params }: Props) {
 
           {/* Right Column: Sticky Facts Card */}
           <div className="xl:sticky xl:top-24 space-y-6">
+            {/* Promotional Video */}
+            {project.video && (
+              <div className="rounded-xl overflow-hidden shadow-md border border-[var(--color-rule)] bg-[var(--color-slate-900)]">
+                <video
+                  src={project.video}
+                  autoPlay
+                  loop
+                  muted
+                  controls
+                  playsInline
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            )}
+            
             <div className="credentials-list rounded-xl overflow-hidden border border-[var(--color-rule)] bg-[var(--color-paper)] shadow-md">
               <div className="px-6 py-5 border-b border-[var(--color-rule)] bg-slate-900 text-white">
                 <p className="font-sans font-700 text-[0.875rem] tracking-[0.06em] uppercase text-amber-400">
@@ -460,13 +460,38 @@ export default async function ProjectDetailPage({ params }: Props) {
               <p className="text-slate-300 text-sm mb-4 leading-relaxed">
                 Connect with our advisory desk for comprehensive unit availability, floor layouts, and cost estimation sheets.
               </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 font-600 text-sm transition-colors group"
-              >
-                <span>Request Project Brochure & Pricing</span>
-                <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
+              {project.brochure ? (
+                <a
+                  href={project.brochure}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block"
+                >
+                  <div className="relative mb-4 rounded-lg overflow-hidden border border-slate-700 shadow-md aspect-[3/4] max-w-[200px] mx-auto bg-slate-800">
+                    <img 
+                      src={project.cover} 
+                      alt={`${project.title} Brochure Thumbnail`}
+                      className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500" 
+                    />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-12 h-12 rounded-full bg-slate-900/60 flex items-center justify-center backdrop-blur-sm border border-slate-600 group-hover:bg-[var(--color-brass)] group-hover:border-[var(--color-brass)] transition-colors">
+                        <ArrowRight size={20} className="text-white group-hover:translate-x-0.5 transition-transform" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="inline-flex items-center gap-2 text-amber-400 group-hover:text-amber-300 font-600 text-sm transition-colors w-full justify-center">
+                    <span>Download Project Brochure</span>
+                  </div>
+                </a>
+              ) : (
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center gap-2 text-amber-400 hover:text-amber-300 font-600 text-sm transition-colors group"
+                >
+                  <span>Request Project Brochure & Pricing</span>
+                  <ArrowRight size={15} className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+              )}
             </div>
           </div>
         </div>

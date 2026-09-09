@@ -61,6 +61,7 @@
     scroll-padding-top: 72px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   body {
@@ -68,6 +69,7 @@
     color: var(--color-slate-900);
     background: var(--color-paper);
     min-height: 100vh;
+    overflow-x: hidden;
   }
 
   /* Reset focus — we'll set our own brass ring */

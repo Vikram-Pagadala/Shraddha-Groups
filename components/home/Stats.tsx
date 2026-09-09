@@ -19,8 +19,8 @@ export default function Stats() {
               className={`flex flex-col ${i < 3 ? 'md:border-r md:border-[var(--color-slate-800)]' : ''} md:pr-8`}
             >
               <dt
-                className="tabular-nums font-serif font-700 text-[var(--color-paper)] mb-1"
-                style={{ fontSize: 'clamp(1.75rem, 3vw, 2.5rem)', lineHeight: '1.1' }}
+                className="tabular-nums font-serif font-700 text-[var(--color-paper)] mb-1 tracking-tight"
+                style={{ fontSize: 'clamp(1.2rem, 5vw, 2.5rem)', lineHeight: '1.1' }}
               >
                 {value}
               </dt>
